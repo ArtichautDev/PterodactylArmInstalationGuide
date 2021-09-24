@@ -58,7 +58,7 @@ how to install pterodactyl on arm devices (rasberry pi)
  
     $ sudo apt update
 
-     $ sudo apt install -y --no-install-recommends \
+    $ sudo apt install -y --no-install-recommends \
     docker-ce \
     cgroupfs-mount
     
@@ -73,7 +73,7 @@ Run Docker
 
     $ curl -L -o /usr/local/bin/wings https://github.com/pterodactyl/wings/releases/latest/download/wings_linux_arm64
 
-     $ chmod u+x /usr/local/bin/wings
+    $ chmod u+x /usr/local/bin/wings
 
 # deploy Your Node :
   panel.example.com --> administration --> nodes --> your Node --> configuration --> Deploy your Node
@@ -100,5 +100,9 @@ Run Docker
   Standalone - Use this if neither works. Make sure to stop your webserver first when using this method.
   
     $ certbot certonly --standalone -d example.com
+    
+  # Start Wings
+  
+   
 
 
