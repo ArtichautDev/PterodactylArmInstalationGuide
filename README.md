@@ -25,6 +25,7 @@ how to install pterodactyl on arm devices (rasberry pi)
 # Step 3: Update tour system:
   
     sudo apt update
+-
   
     sudo apt full-upgrade
   
@@ -36,6 +37,7 @@ how to install pterodactyl on arm devices (rasberry pi)
  
   # Docker Installation #2
      sudo apt update
+-
 
      sudo apt install -y \
      apt-transport-https \
@@ -108,6 +110,7 @@ Run Docker
   # Start Wings
   
      systemctl enable wings
+-
    
      systemctl start wings
   
