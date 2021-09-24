@@ -68,7 +68,7 @@ how to install pterodactyl on arm devices (rasberry pi)
 Run Docker 
 
      sudo systemctl enable docker
-    -
+-
 
      sudo systemctl start docker
 
