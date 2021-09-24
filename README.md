@@ -45,11 +45,11 @@ $ sudo apt install -y \
 
  Get the Docker signing key for packages
  
-curl -fsSL https://download.docker.com/linux/$(. /etc/os-release; echo "$ID")/gpg | sudo apt-key add -
+$ curl -fsSL https://download.docker.com/linux/$(. /etc/os-release; echo "$ID")/gpg | sudo apt-key add -
 
  Add the Docker official repos
  
-echo "deb [arch=$(dpkg --print-architecture)] https://download.docker.com/linux/$(. /etc/os-release; echo "$ID") \
+$ echo "deb [arch=$(dpkg --print-architecture)] https://download.docker.com/linux/$(. /etc/os-release; echo "$ID") \
      $(lsb_release -cs) stable" | \
     sudo tee /etc/apt/sources.list.d/docker.list
 
@@ -78,6 +78,14 @@ $ chmod u+x /usr/local/bin/wings
   panel.example.com --> administration --> nodes --> your Node --> configuration --> Deploy your Node
   
 # SSl Connection To Node
+  $ sudo apt install -y certbot
   
+  Run this if you use Nginx
+  
+  $ sudo apt install -y python3-certbot-nginx
+  
+  Run this if you use Apache
+  
+  $ sudo apt install -y python3-certbot-apache
 
 
