@@ -35,6 +35,7 @@ how to install pterodactyl on arm devices (rasberry pi)
  
   # Docker Installation #2
 $ sudo apt update
+
 $ sudo apt install -y \
      apt-transport-https \
      ca-certificates \
@@ -52,11 +53,13 @@ echo "deb [arch=$(dpkg --print-architecture)] https://download.docker.com/linux/
 
  Install Docker
 $ sudo apt update
+
 $ sudo apt install -y --no-install-recommends \
     docker-ce \
     cgroupfs-mount
     
 Run Docker 
+
 $ sudo systemctl enable docker
 
 $ sudo systemctl start docker
