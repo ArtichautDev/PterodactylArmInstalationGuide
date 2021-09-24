@@ -24,20 +24,20 @@ how to install pterodactyl on arm devices (rasberry pi)
 
 # Step 3: Update tour system:
   
-    $ sudo apt update
+    sudo apt update
   
-    $ sudo apt full-upgrade
+    sudo apt full-upgrade
   
 # Step 4: Install Docker:
  
-    $ curl -sSL https://get.docker.com/ | CHANNEL=stable bash
+    curl -sSL https://get.docker.com/ | CHANNEL=stable bash
  
  If its dont work :
  
   # Docker Installation #2
-     $ sudo apt update
+     sudo apt update
 
-     $ sudo apt install -y \
+     sudo apt install -y \
      apt-transport-https \
      ca-certificates \
      curl \
@@ -50,58 +50,66 @@ how to install pterodactyl on arm devices (rasberry pi)
 
  Add the Docker official repos
  
-     $ echo "deb [arch=$(dpkg --print-architecture)] https://download.docker.com/linux/$(. /etc/os-release; echo "$ID") \
+     echo "deb [arch=$(dpkg --print-architecture)] https://download.docker.com/linux/$(. /etc/os-release; echo "$ID") \
      $(lsb_release -cs) stable" | \
     sudo tee /etc/apt/sources.list.d/docker.list
 
  Install Docker
  
-    $ sudo apt update
+     sudo apt update
+-
 
-    $ sudo apt install -y --no-install-recommends \
+     sudo apt install -y --no-install-recommends \
     docker-ce \
     cgroupfs-mount
     
 Run Docker 
 
-    $ sudo systemctl enable docker
+     sudo systemctl enable docker
+    -
 
-    $ sudo systemctl start docker
+     sudo systemctl start docker
 
 # Install Wings 
-    $ mkdir -p /etc/pterodactyl
+     mkdir -p /etc/pterodactyl
+-
 
-    $ curl -L -o /usr/local/bin/wings https://github.com/pterodactyl/wings/releases/latest/download/wings_linux_arm64
-
-    $ chmod u+x /usr/local/bin/wings
+     curl -L -o /usr/local/bin/wings https://github.com/pterodactyl/wings/releases/latest/download/wings_linux_arm64
+-
+     
+     chmod u+x /usr/local/bin/wings
 
 # deploy Your Node :
   panel.example.com --> administration --> nodes --> your Node --> configuration --> Deploy your Node
   
 # SSl Connection To Node
-    $ sudo apt install -y certbot
+     sudo apt install -y certbot
   
   Run this if you use Nginx
   
-    $ sudo apt install -y python3-certbot-nginx
+     sudo apt install -y python3-certbot-nginx
   
   Run this if you use Apache
   
-    $ sudo apt install -y python3-certbot-apache
+     sudo apt install -y python3-certbot-apache
   
   Nginx
   
-    $ certbot certonly --nginx -d example.com
+     certbot certonly --nginx -d example.com
   
   Apache
   
-    $ certbot certonly --apache -d example.com
+     certbot certonly --apache -d example.com
   
   Standalone - Use this if neither works. Make sure to stop your webserver first when using this method.
   
-    $ certbot certonly --standalone -d example.com
+     certbot certonly --standalone -d example.com
     
   # Start Wings
+  
+     systemctl enable wings
+   
+     systemctl start wings
   
    
 
