@@ -114,9 +114,16 @@ Run Docker
    
      systemctl start wings
     
+   # Allocation 
+   For The allocations Dont put your Ip ? Put your Ip gateway 
+   
+     hostname -I | awk '{print $1}'
+   
    # Wings Issues
    If You have a problem Screen your wings --debug and create an issue
   
+  # Panel
+   In redaction
    
 
 
