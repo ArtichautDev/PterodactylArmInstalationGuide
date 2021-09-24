@@ -123,7 +123,7 @@ Run Docker
    If You have a problem Screen your wings --debug and create an issue
   
   # Panel
-   In redaction
+   SOON
    
 
 
