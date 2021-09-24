@@ -67,7 +67,7 @@ $ sudo systemctl enable docker
 
 $ sudo systemctl start docker
 
-#Install Wings 
+# Install Wings 
 $ mkdir -p /etc/pterodactyl
 
 $ curl -L -o /usr/local/bin/wings https://github.com/pterodactyl/wings/releases/latest/download/wings_linux_arm64
