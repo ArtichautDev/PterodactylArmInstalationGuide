@@ -55,7 +55,7 @@ how to install pterodactyl on arm devices (rasberry pi)
 
  Get the Docker signing key for packages
  
-    $ curl -fsSL https://download.docker.com/linux/$(. /etc/os-release; echo "$ID")/gpg | sudo apt-key add -
+    curl -fsSL https://download.docker.com/linux/$(. /etc/os-release; echo "$ID")/gpg | sudo apt-key add -
 
  Add the Docker official repos
  
