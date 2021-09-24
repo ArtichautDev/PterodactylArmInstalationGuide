@@ -74,3 +74,10 @@ $ curl -L -o /usr/local/bin/wings https://github.com/pterodactyl/wings/releases/
 
 $ chmod u+x /usr/local/bin/wings
 
+# deploy Your Node :
+  panel.example.com --> administration --> nodes --> your Node --> configuration --> Deploy your Node
+  
+# SSl Connection To Node
+  
+
+
