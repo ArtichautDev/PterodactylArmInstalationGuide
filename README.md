@@ -2,7 +2,7 @@
 how to install pterodactyl on arm devices (rasberry pi)
 
 
-# Step 1 : install a 64 bit os:
+# Step 1 : install a 64 bit os ( 64 BIT ONLY !!!!):
  
   rasberry pi imager : https://www.raspberrypi.org/software/ 
   rasbian 64 bit Image : https://downloads.raspberrypi.org/raspios_arm64/images/raspios_arm64-2020-05-28/2020-05-27-raspios-buster-arm64.zip
@@ -66,4 +66,11 @@ Run Docker
 $ sudo systemctl enable docker
 
 $ sudo systemctl start docker
+
+#Install Wings 
+$ mkdir -p /etc/pterodactyl
+
+$ curl -L -o /usr/local/bin/wings https://github.com/pterodactyl/wings/releases/latest/download/wings_linux_arm64
+
+$ chmod u+x /usr/local/bin/wings
 
