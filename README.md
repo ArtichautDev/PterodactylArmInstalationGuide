@@ -87,5 +87,17 @@ $ chmod u+x /usr/local/bin/wings
   Run this if you use Apache
   
   $ sudo apt install -y python3-certbot-apache
+  
+  Nginx
+  
+  $ certbot certonly --nginx -d example.com
+  
+  Apache
+  
+  $ certbot certonly --apache -d example.com
+  
+  Standalone - Use this if neither works. Make sure to stop your webserver first when using this method.
+  
+  $ certbot certonly --standalone -d example.com
 
 
