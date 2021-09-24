@@ -5,12 +5,19 @@ how to install pterodactyl on arm devices (rasberry pi)
 # Step 1 : install a 64 bit os ( 64 BIT ONLY !!!!):
  
   rasberry pi imager : https://www.raspberrypi.org/software/ 
+  
   rasbian 64 bit Image : https://downloads.raspberrypi.org/raspios_arm64/images/raspios_arm64-2020-05-28/2020-05-27-raspios-buster-arm64.zip
+  
   Launch Raspberry Pi Imager.
+  
   Click Choose OS. ...
+  
   Select an OS from the list.
+  
   Click Choose SD card.
+  
   Select from the list the SD card you want to write to.
+  
   Click Write to begin the image writing process.
 
 # Step 2 : Set a ssh Connection (optional) :
