@@ -120,6 +120,20 @@ Run Docker
 -
    
      systemctl start wings
+     
+ If its dont work :
+ # Start Wings #2
+    apt install screen
+-
+
+    screen -S wings    
+-
+
+    wings
+-
+ Close The window 
+
+ Done !
     
    # Allocation 
    For The allocations Dont put your Ip ? Put your Ip gateway 
