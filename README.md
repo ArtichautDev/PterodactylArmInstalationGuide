@@ -117,11 +117,9 @@ Run Docker
   # Start Wings
   
      systemctl enable wings
-     
 -
-   
-   
-    systemctl start wings
+
+     systemctl start wings
      
  If its dont work :
  # Start Wings #2
