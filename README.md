@@ -85,7 +85,8 @@ Run Docker
 
      curl -L -o /usr/local/bin/wings https://github.com/pterodactyl/wings/releases/latest/download/wings_linux_arm64
 -
-     
+
+ 
     chmod u+x /usr/local/bin/wings
 
 # deploy Your Node :
