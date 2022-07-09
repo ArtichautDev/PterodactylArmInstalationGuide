@@ -144,8 +144,7 @@ Run Docker
    # Wings Issues
    If You have a problem Screen your wings --debug and create an issue
   
-  # Panel
-   SOON
+
    
 
 
